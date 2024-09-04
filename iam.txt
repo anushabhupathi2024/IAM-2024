@@ -1,0 +1,38 @@
+IAM(identity access management)
+
+1. Using IAM we can securely manage access to aws services and resources.
+2. We can manage users, groups, policies ect.
+3. In real time scenarios there will be accounts for our clients and we get access to those accounts by using an IAM user.
+
+IAM User
+
+1. If you want to give your account access to others, you can achieve this by using IAM user.
+2. You can give set of policies(permissions) to the user.
+3. You can restrict certain services to the user.
+4. You have two types of logging
+       a. Console access
+       b. AWS programmatic access
+5. If you want to connect to your aws account from your local laptop , I can achieve this by creating an IAM user.(By using AWS CLI)
+ 
+
+IAM Group
+
+1. if a lot of users want the same access at that time, create an IAM group and add users into that group.
+2. That new user will get the same set of permissions as the existing user in that account.
+
+IAM Role
+
+1. If any service within the AWS account wants to talk with any other service within the AWS account, 
+    at that time we can create an IAM role
+2. For Eg. If my ec2 wants to talk with s3 bucket, 
+    I can create a role for ec2 by giving S3 Full access and I can attach that role to ec2.
+3. If S3 bucket wants to talk with Cloudwatch, I can give cloudwatch full access and attach a role to s3 bucket.
+
+IAM Policies
+
+1. IAM policy is the JSON document which allows/denies certain operations.
+2. IAM policy can be attached to IAM User,IAM group or IAM role.
+3. Policy is nothing but a set of permissions.
+4. we get AWS managed policies by default when an account gets created.
+5. We can create custom policies for our use cases.
+6. But most of the time we need custom policies, so we only give required permissions,we do not grant open permissions.
