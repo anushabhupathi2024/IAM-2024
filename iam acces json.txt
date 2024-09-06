@@ -1,0 +1,71 @@
+                                                  IAM- day2 task
+
+=> First you login to root user2 and password (iam).
+=> Open to iam ,select the users ,click on the user2.
+=> click on the add permissions and select the attach policies directly.
+=> Search the policies ,s3,ec2,vpc,iam full access these policies are attch the user2.
+=> Using JSON format how to access the s3,ec2,vpc,iam  permissions.
+=> First you can choose the user2,attach the policies and write the JSON formate.
+=> First you can access the s3 buckets using JOSN formate.
+
+   {
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "Statement1",
+			"Effect": "Allow",
+			"Action": [
+				"s3:*"
+			],
+			"Resource": [
+				"*"
+			]
+		}
+	]
+}
+
+=> We can give the amazonS3 read only ,we canot create the bucket and cont uplod the file.
+=> this the JSON formate
+     {
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "denyingtheallactionsiss3",
+			"Effect": "Deny",
+			"Action": [
+				"s3:*"
+			],
+			"Resource": [
+				"*"
+			]
+		}
+	]
+}
+
+=> next we will access ec2,auto scaling.
+=> We will access the JSON format and create policy.
+
+
+      {
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "notallowing",
+			"Effect": "Deny",
+			"Action": [
+				"ec2:*",
+				"autoscaling:*"
+			],
+			"Resource": [
+				"*"
+			]
+		}
+       }
+
+=> policyes are two types 1. aws managed policy 2. customer managed policy
+=> This is creation of inline policy.
+
+
+
+
+
