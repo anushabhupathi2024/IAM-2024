@@ -1,0 +1,24 @@
+How to create an S3 bucket :
+
+1. To store the object into the S3 bucket, we must create the S3 bucket.
+2. To create an S3 bucket we must follow the naming rules.
+a. Bucket name should be unique across all the AWS accounts.
+b. Bucket names must be between 3 (min) and 63 (max) characters long.
+c. Bucket names can consist only of lowercase letters, numbers, dots (.), and
+hyphens (-).
+d. Bucket names must begin and end with a letter or number.
+e. Bucket names must not be formatted as an IP address (for example,
+192.168.5.4).
+3. Create the S3 bucket now with the above rules.
+a. Click on the create bucket→ give the name of the bucket → leave other values
+as default .
+b. Click on the create bucket.
+
+How to upload the object into the S3 bucket :
+
+1. Create a sample file on your local laptop.
+2. Go to the S3 bucket →click on the upload → add files →choose the above file.
+Download the object:
+1. Click on the object → select Download.
+Open the object:
+1. Click on the object → open the object

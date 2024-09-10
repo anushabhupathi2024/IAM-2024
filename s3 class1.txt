@@ -1,0 +1,36 @@
+                                          S3(simple storage service)
+
+Simple Storage Service (S3):
+
+1. S3 comes under the storage service.
+2. S3 is an object oriented service which offers high scalability, data availability. Security
+and performance.
+3. Any organization’s/customers can use the S3 bucket and can store unlimited amounts of
+data into it. But at a time we can upload the max of 5TB of data (FAQ 5/5)
+4. S3 can be used for different types of use cases
+a. Data lakes
+b. Images and Videos
+c. Mobile applications
+d. You can store the softwares and ask customers to download from S3.
+e. We can host the static website.
+f. Object transition to save the cost.
+g. Data archival at cheaper cost.
+
+
+Some of the important characteristics of the S3 bucket:
+
+1. We don’t need to choose the bucket size when you are creating the bucket, we can
+upload an unlimited amount of data into the S3 bucket.
+2. S3 has different storage classes.
+3. S3 supports versioning.
+4. S3 bucket name should be unique across all the AWS accounts.
+5. S3 supports object lock and encryption.
+6. S3 bucket by default is private. You can make an S3 bucket as public.
+7. S3 is the region specific
+8. S3 supports same region replication and cross region replication.
+9. etc.
+
+Object:
+
+Object is nothing but an ordered key value pair that you store in the S3 bucket. Anything you
+upload into S3 bucket is called an Object.

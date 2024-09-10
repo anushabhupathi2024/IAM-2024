@@ -1,0 +1,24 @@
+Copy the object:
+Click on the object → Actions → Copy.
+
+Delete object:
+Click on the object → Delete
+
+Move the object:
+Click on the object → Actions → Move.
+
+Can we create the folder inside the S3 bucket:
+Yes we can create the folder inside the S3 bucket
+1. Open the S3 bucket
+2. Click on the create folder and give the folder name.
+
+Versioning :
+
+1. If you delete an object from S3 it will be permanently deleted and we can’t restore it.
+2. Versioning by default is disabled.
+3. Versioning is used to prevent the accidental deletion of the data. Even if you delete an
+object, we can still restore it.
+4. Once versioning is enabled we can’t disable it. However we can suspend it. (FAQ)
+a. To maintain a unique version ID of the object.
+b. To avoid duplication of the same object.
+5. We can enable versioning for the whole bucket and not for an individual object.
